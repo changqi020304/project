@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <router-view/>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
 }
 </script>
 
@@ -86,3 +87,4 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 </style>
+ 
