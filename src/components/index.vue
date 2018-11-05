@@ -15,10 +15,13 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
+<<<<<<< HEAD
 h1{
   color: red;
   font-size: 50px;
+=======
+.warp{
+>>>>>>> 1097d2b573e84d56f329fc1108ae0a3d1d893f22
 }
 </style>
