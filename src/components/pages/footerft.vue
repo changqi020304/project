@@ -1,8 +1,13 @@
 <template>
   <div class="warp">
     <div class="content">
-      <div class="items" v-for="(v,i) in datalist" :key="i">
-        <span>{{v.title}}</span>
+      <div class="item" v-for="(v, i) in datalist" :key="i">
+        <span>
+          {{v.tb}}
+        </span>
+        <span>
+          {{v.title}}
+        </span>
       </div>
     </div>
   </div>
@@ -10,28 +15,27 @@
 
 <script>
 export default {
-  name: "top",
-  props: ["datalist"],
+  name: "footerft",
   data() {
     return {};
-  }
+  },
+  props: ["datalist"]
 };
 </script>
 
 <style scoped lang="less">
 .warp {
   position: fixed;
-  top: 0px;
+  bottom: 0px;
   left: 0;
   right: 0;
   color: white;
   background-color: #25252f;
-  height: 135px;
   .content {
     display: flex;
     justify-content: space-around;
-    line-height: 135px;
     align-items: center;
+    height: 135px;
   }
 }
 </style>
