@@ -5,16 +5,16 @@
 </template>
 
 <script>
+
 export default {
-  name: 'index',
-  data () {
-    return {
-    }
+  name: "top",
+  data() {
+    return {};
   }
-}
+};
 </script>
 
 <style scoped lang="less">
-.warp{
+.warp {
 }
 </style>

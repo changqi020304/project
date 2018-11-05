@@ -5,7 +5,10 @@ import App from './App'
 import router from './router'
 import 'lib-flexible/flexible.js'
 
+import './assets/iconfont/iconfont.css'
 Vue.config.productionTip = false
+import Mint from 'mint-ui'
+Vue.use(Mint);
 
 /* eslint-disable no-new */
 new Vue({
