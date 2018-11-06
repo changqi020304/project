@@ -70,7 +70,7 @@ export default {
 h1 {
   color: white;
   font-size: 50px;
-}
+} 
 .content {
   width: 80%;
   margin: 100px auto;
