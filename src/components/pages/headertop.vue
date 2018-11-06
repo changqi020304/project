@@ -27,11 +27,17 @@ export default {
   color: white;
   background-color: #25252f;
   height: 135px;
+  z-index: 9999;
   .content {
     display: flex;
     justify-content: space-around;
     line-height: 135px;
     align-items: center;
+    .items {
+      span {
+        font-size: 50px;
+      }
+    }
   }
 }
 </style>

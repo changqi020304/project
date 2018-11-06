@@ -1,11 +1,12 @@
 <template>
   <div id="app">
     <div class="box">
-      <div class="header">
+      <headertop :datalist="headertop"></headertop>
+      <!-- <div class="header">
         <p>&lt;</p>
         <p class="pp">关于</p>
         <p></p>
-      </div>
+      </div> -->
       <div class="imgs">
         <img class="imga" src="../assets\sz-4.png" alt="">
         <div class="log">
@@ -27,8 +28,15 @@
 </template>
 
 <script>
+import headertop from "./pages/headertop";
 export default {
+  components: { headertop },
   name: "box",
+  data() {
+    return {
+      headertop: [{ title: "<" }, { title: "关于" }, { title: " " }]
+    };
+  },
   methods: {}
 };
 </script>
@@ -38,7 +46,6 @@ export default {
   display: flex;
   height: 100%;
   height: 1920px;
-  border: 2px solid orange;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -85,7 +92,7 @@ export default {
   text-align: center;
   line-height: 300px;
 }
-.centent{
+.centent {
   width: 770px;
   height: 390px;
   margin: 0 auto;
