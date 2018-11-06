@@ -9,8 +9,15 @@
       <div class="imgs">
         <img class="imga" src="../assets\sz-4.png" alt="">
         <div class="log">
-
+          369
         </div>
+      </div>
+      <div class="centent">
+          <ul>
+            <li>369Cloud</li>
+            <li>打造移动互联网第一研发生态圈</li>
+            <li>V1,0,0</li>
+          </ul>
       </div>
      
 
@@ -22,9 +29,7 @@
 <script>
 export default {
   name: "box",
-  methods:{
-    
-  }
+  methods: {}
 };
 </script>
 
@@ -32,7 +37,7 @@ export default {
 .box {
   display: flex;
   height: 100%;
-  height: 1920px; 
+  height: 1920px;
   border: 2px solid orange;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -55,25 +60,37 @@ export default {
   padding-left: 30px;
   font-size: 80px;
 }
-.pp{
+.pp {
   text-align: center;
 }
-.imga{
+.imga {
   width: 100%;
   height: 100%;
 }
-.imgs{
+.imgs {
   width: 100%;
   height: 50%;
   position: relative;
 }
-.log{
+.log {
   width: 300px;
-  height: 300px; 
-  background: linear-gradient(to top,skyblue,#5098ea);
+  height: 300px;
+  background: linear-gradient(to top, skyblue, #5098ea);
   border-radius: 50px;
   position: absolute;
   top: 30%;
-  left: 30%;
+  left: 35%;
+  color: #fff;
+  font-size: 100px;
+  text-align: center;
+  line-height: 300px;
+}
+.centent{
+  width: 770px;
+  height: 390px;
+  margin: 0 auto;
+  font-size: 40px;
+  text-align: center;
+  line-height: 100px;
 }
 </style>
